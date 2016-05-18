@@ -1,9 +1,16 @@
 --
 -- Copyright (c) 2016 by Aegis Computing. All Rights Reserved.
 --
+// Yes the copyright is shitty but it protects my work. so there's that.
 
 
-// Do even try it you sneeky asshole.
+// Don't even try it you sneeky asshole.
 net.Receive("playerjoinedAddChat", function()
   chat.AddText(unpack(net.ReadTable()))
+end)
+
+// Don't even try it you sneeky asshole.
+net.Receive("playerjoinedAddConsole", function()
+  MsgC(unpack(net.ReadTable()))
+  MsgN()
 end)
